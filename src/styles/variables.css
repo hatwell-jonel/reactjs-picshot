@@ -1,0 +1,5 @@
+:root {
+  --clr-bg-light: hsl(0, 0%, 90%);
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-dark: hsl(0, 0%, 0%);
+}

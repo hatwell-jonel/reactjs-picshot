@@ -1,0 +1,30 @@
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  width: max-content;
+  font-size: 30px;
+
+  /* GRADIENT */
+  background: #1f0fff;
+  background: repeating-linear-gradient(
+    to top left,
+    #1f0fff 0%,
+    #0873ff 50%,
+    #0fdfff 100%
+  );
+
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.logo__icon {
+  color: #0873ff;
+}
+
+.logo__text {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+}

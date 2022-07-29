@@ -1,0 +1,137 @@
+.hero {
+  background: linear-gradient(
+      150deg,
+      rgba(0, 0, 0, 0.9) 0%,
+      rgba(0, 0, 0, 0.5) 65%,
+      rgba(0, 0, 0, 0.2553221117548582) 100%
+    ),
+    url(../assets/images/bg-mobile.jpg) no-repeat center/cover;
+  height: 400px !important;
+  padding: 1rem 0rem;
+}
+
+.hero__container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero__text {
+  color: var(--clr-white);
+  text-align: center;
+}
+
+.hero__text h1 {
+  font-size: 1.7rem;
+}
+
+.hero__text p {
+  font-size: 0.9rem;
+  color: var(--clr-bg-light);
+  line-height: 2;
+}
+
+.input-group {
+  position: relative;
+  width: 100%;
+  max-width: 700px;
+  padding: 3px;
+  padding-right: 2rem;
+  border-radius: 40px;
+  margin-top: 1rem;
+
+  /* GLASS */
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.search__icon {
+  color: var(--clr-white);
+  font-size: 30px;
+}
+
+#input_search {
+  width: 100% !important;
+  height: 100%;
+  background: transparent;
+  border: none;
+  caret-color: #0873ff;
+  font-size: 1.05rem;
+  color: var(--clr-white);
+  letter-spacing: 1px;
+  padding: 5px 15px;
+}
+
+/* #input_search:focus ~ .search__icon {
+  color: #1f0fff;
+  background: repeating-linear-gradient(
+    to top left,
+    #1f0fff 0%,
+    #0873ff 50%,
+    #0fdfff 100%
+  );
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+} */
+
+#input_search::placeholder {
+  color: #f4f4f4;
+}
+
+.input-group .search__icon {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    background: linear-gradient(
+        150deg,
+        rgba(0, 0, 0, 0.9) 0%,
+        rgba(0, 0, 0, 0.5) 65%,
+        rgba(141, 141, 141, 0.255) 100%
+      ),
+      url(../assets/images/bg-tablet.jpg) no-repeat center/cover;
+    height: 450px !important;
+  }
+
+  .hero__text {
+    text-align: left;
+  }
+
+  .hero__text h1 {
+    font-size: 2rem;
+  }
+
+  .hero__text p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    background: linear-gradient(
+        150deg,
+        rgba(0, 0, 0, 0.9) 0%,
+        rgba(0, 0, 0, 0.5) 65%,
+        rgba(0, 0, 0, 0.2553221117548582) 100%
+      ),
+      url(../assets/images/bg-desktop.jpg) no-repeat center/cover;
+    height: 550px !important;
+  }
+
+  .hero__text h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero__text p {
+    font-size: 1rem;
+  }
+}

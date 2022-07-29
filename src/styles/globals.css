@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  font-size: 18px;
+}
+
+body {
+  min-width: 300px !important;
+  background-color: var(--clr-bg-light);
+}
+
+button,
+.btn {
+  cursor: pointer;
+}
+
+input {
+  outline: none;
+  box-shadow: 0;
+}
+
+ul {
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  width: 95%;
+  max-width: 1200px;
+  margin: 0 auto !important;
+}
+
+@media screen and (min-width: 548px) {
+  .container {
+    width: 90%;
+  }
+}
